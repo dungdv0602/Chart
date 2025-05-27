@@ -9,9 +9,9 @@ export default function Home() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   // State bật/tắt chỉ báo
-  const [showRSI, setShowRSI] = useState(true);
-  const [showMACD, setShowMACD] = useState(true);
-  const [showMA, setShowMA] = useState(true); // EMA/SMA chung
+  const [showRSI, setShowRSI] = useState(false);
+  const [showMACD, setShowMACD] = useState(false);
+  const [showMA, setShowMA] = useState(false); // EMA/SMA chung
 
   return (
     <main className="p-4">
