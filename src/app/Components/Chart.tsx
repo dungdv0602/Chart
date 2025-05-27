@@ -7,7 +7,6 @@ import {
   IChartApi,
   ISeriesApi,
   CandlestickData,
-  HistogramData,
   Time,
 } from 'lightweight-charts';
 import { GetCandles, subscribeToWS } from '@/app/services/binance';
