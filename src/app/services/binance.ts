@@ -44,8 +44,8 @@ export const GetCandles = async (
 ): Promise<ICandleStick[]> => {
   try {
     const response = await axios.get<BinanceRawCandle[]>(
-      `https://api.binance.com/api/v3/klines?symbol=${currentCoin}&interval=${currentTimeFrame}&limit=500`,
-      { timeout: 5000 }
+      `https://api.binance.com/api/v3/klines?symbol=${currentCoin}&interval=${currentTimeFrame}&limit=1000`,
+      { timeout: 10000 }
     );
 
     // Chuyển đổi dữ liệu từ raw array sang dạng object ICandleStick
